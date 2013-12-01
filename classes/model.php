@@ -4,19 +4,15 @@
 * Klasse fuer den Datenzugriff
 *
 * @author SmO
-* @since 28.01.2013
+* @since 01.12.2013
 *
 **/
+namespace bookList;
+
 class Model
 {
-	// Eintraege eines Blogs als zwei dimensionales Array
-	private static $entries = array
-	(
-		array("id"=>"0", "titel"=>"Eintrag 1", "content"=>"Ich bin der erste Eintrag"),
-		array("id"=>"1", "titel"=>"Eintrag 2", "content"=>"Ich bin der zweite Eintrag"),
-		array("id"=>"2", "titel"=>"Eintrag 3", "content"=>"Ich bin der dritte Eintrag")		
-	);
-	
+	private static $entries = array();
+		
 	/**
 	 * Gibt alle Eintraege des Blogs zuruek
 	 *

@@ -7,6 +7,7 @@
 * @since 28.01.2013
 *
 **/
+namespace bookList;
 
 class View
 {

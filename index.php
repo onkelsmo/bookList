@@ -4,9 +4,12 @@
 * Der Einstiegspunkt 
 *
 * @author SmO
-* @since 28.01.2013
+* @since 01.12.2013
 *
 **/
+namespace bookList;
+
+error_reporting(E_ALL);
 
 // Unsere Klassen einbinden
 include 'classes/controller.php';

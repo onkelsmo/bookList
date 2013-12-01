@@ -4,9 +4,10 @@
 * Controller kontrolliert, was angezeigt wird und was damit passiert. 
 *
 * @author SmO
-* @since 29.01.2013
+* @since 01.12.2013
 *
 **/
+namespace bookList;
 
 class Controller
 {
@@ -50,14 +51,15 @@ class Controller
 			case 'default':
 			default:
 				$entries = Model::getEntries();
-				$innerView->setTemplate('default');
+				$innerView->setTemplate('list');
 				$innerView->assign('entries', $entries);
 		}
 		
-		$this->view->setTemplate('theBlog');
-		$this->view->assign('blog_titel', 'Der Titel des Blogs');
-		$this->view->assign('blog_footer', 'Ein Blog von und mit MVC');
-		$this->view->assign('blog_content', $innerView->loadTemplate());
+		$this->view->setTemplate('Wrapper');
+		$this->view->assign('title', 'B&uuml;cherliste');
+		$this->view->assign('header', 'B&uuml;cherliste');
+		$this->view->assign('content', $innerView->loadTemplate());
+		$this->view->assign('footer', '&copy; Jan Smolka 12.2013');
 		return $this->view->loadTemplate();
 	}
 }
