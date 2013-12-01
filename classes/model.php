@@ -20,7 +20,7 @@ class Model
 	 *
 	 */	
 	public static function getEntries()
-	{
+	{		
 		return self::$entries;
 	}
 	

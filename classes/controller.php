@@ -48,6 +48,10 @@ class Controller
 				$innerView->assign('content', $entry['content']);
 				break;
 				
+			case 'new':
+				$innerView->setTemplate('new');	
+				break;
+			
 			case 'default':
 			default:
 				$entries = Model::getEntries();
@@ -55,7 +59,7 @@ class Controller
 				$innerView->assign('entries', $entries);
 		}
 		
-		$this->view->setTemplate('Wrapper');
+		$this->view->setTemplate('wrapper');
 		$this->view->assign('title', 'B&uuml;cherliste');
 		$this->view->assign('header', 'B&uuml;cherliste');
 		$this->view->assign('content', $innerView->loadTemplate());

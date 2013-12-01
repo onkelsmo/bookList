@@ -8,18 +8,7 @@
 *
 **/ 
 namespace bookList;
-
-foreach ($this->_['entries'] as $entry)
-{
-	?>
-	<h2>
-		<a href="?view=entry&id=<?php echo $entry['id']; ?>">
-			<?php echo $entry['titel']; ?>
-		</a>
-	</h2>
-	<p>
-		<?php echo $entry['content']; ?>
-	</p>
-	<?php 
-}
 ?>
+
+<p>Hallo list Template</p>
+<a href="?view=new"><button>new</button></a>
