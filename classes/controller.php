@@ -13,6 +13,7 @@ class Controller
 {
 	private $request = null;
 	private $template = '';
+	private $model = null;
 	private $view = null;
 	
 	/**
@@ -26,6 +27,8 @@ class Controller
 		$this->view = new View();
 		$this->request = $request;		
 		$this->template = !empty($request['view']) ? $request['view'] : 'default';
+		
+		dump($request);
 	}
 	
 	/**

@@ -13,7 +13,7 @@ $(function ()
 			type:		'post',
 			url:		'index.php',
 			data:		$('#newBookForm').serialize(),
-			success:	data
+			success:	data //TODO: JSON übergabe
 		});
 		e.preventDefault();
 	});
