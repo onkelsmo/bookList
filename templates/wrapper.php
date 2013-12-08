@@ -13,6 +13,7 @@ namespace bookList;
 <html>
 	<head>
 		<title><?php echo $this->_['title']; ?></title>
+		<script type="text/javascript" src="<?php echo $this->_['jQuery'] ?>"></script>
 	</head>
 	<body>
 		<div class="header"><?php echo $this->_['header']; ?></div>
