@@ -11,9 +11,9 @@ $(function ()
 		$.ajax(
 		{
 			type:		'post',
-			url:		'dataHandler.php',
+			url:		'index.php',
 			data:		$('#newBookForm').serialize(),
-			success:	function(){alert("form submited");}
+			success:	data
 		});
 		e.preventDefault();
 	});

@@ -24,7 +24,7 @@ class Controller
 	public function __construct($request)
 	{
 		$this->view = new View();
-		$this->request = $request;
+		$this->request = $request;		
 		$this->template = !empty($request['view']) ? $request['view'] : 'default';
 	}
 	
