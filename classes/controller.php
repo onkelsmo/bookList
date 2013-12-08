@@ -57,6 +57,7 @@ class Controller
 				$innerView->assign('publisher', 'Verlag');
 				$innerView->assign('publication_date', 'Ver&ouml;ffentlichungsdatum');
 				$innerView->assign('owner', 'Besitzer');	
+				$innerView->assign('save', 'Speichern');
 				break;
 			
 			case 'default':

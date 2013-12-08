@@ -8,9 +8,11 @@
 *
 **/
 namespace bookList;
+
+dump($_POST);
 ?>
 <p>Neues Buch:</p>
-<form action="#" type="post">
+<form action="#" method="post">
 	<label for="<?php echo $this->_['title'] ?>"><?php echo $this->_['title'] ?></label>
 	<input name="<?php echo $this->_['title'] ?>" type="text" />
 	<br />
@@ -31,5 +33,7 @@ namespace bookList;
 	<br />
 	<label for="<?php echo $this->_['owner'] ?>"><?php echo $this->_['owner'] ?></label>
 	<input name="<?php echo $this->_['owner'] ?>" type="text" />
+	<br />
+	<input type="submit" value="<?php echo $this->_['save'] ?>" />
 </form>
 <a href="?view=list"><button>list</button></a>

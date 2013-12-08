@@ -9,7 +9,7 @@
 **/
 namespace bookList;
 
-// TODO: change mysql connection from oldschool 'mysql_connect' to PDO or MySqli
+// TODO: change mysql connection from oldschool 'mysql_connect' to MySqli
 error_reporting(E_ALL ^ E_DEPRECATED);
 
 include 'includes/config.php';
