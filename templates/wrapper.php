@@ -13,7 +13,8 @@ namespace bookList;
 <html>
 	<head>
 		<title><?php echo $this->_['title']; ?></title>
-		<script type="text/javascript" src="<?php echo $this->_['jQuery'] ?>"></script>
+		<script type="text/javascript" src="<?php echo $this->_['jQuery_lib'] ?>" ></script>
+		<script type="text/javascript" src="<?php echo $this->_['jQuery_own'] ?>" ></script>
 	</head>
 	<body>
 		<div class="header"><?php echo $this->_['header']; ?></div>

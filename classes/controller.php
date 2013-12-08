@@ -68,7 +68,8 @@ class Controller
 		}
 		
 		$this->view->setTemplate('wrapper');
-		$this->view->assign('jQuery', 'js/jQuery-1.10.2.min.js');
+		$this->view->assign('jQuery_lib', 'js/jQuery-1.10.2.min.js');
+		$this->view->assign('jQuery_own', 'js/general.js');
 		$this->view->assign('title', 'B&uuml;cherliste');
 		$this->view->assign('header', 'B&uuml;cherliste');
 		$this->view->assign('content', $innerView->loadTemplate());
