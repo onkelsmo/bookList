@@ -49,7 +49,14 @@ class Controller
 				break;
 				
 			case 'new':
-				$innerView->setTemplate('new');	
+				$innerView->setTemplate('new');
+				$innerView->assign('title', 'Titel');
+				$innerView->assign('author', 'Autor');
+				$innerView->assign('isbn', 'ISBN');
+				$innerView->assign('genre', 'Genre');
+				$innerView->assign('publisher', 'Verlag');
+				$innerView->assign('publication_date', 'Ver&ouml;ffentlichungsdatum');
+				$innerView->assign('owner', 'Besitzer');	
 				break;
 			
 			case 'default':
