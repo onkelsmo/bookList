@@ -25,10 +25,28 @@ class Controller
 	public function __construct($request)
 	{
 		$this->view = new View();
-		$this->request = $request;		
+		//$this->request = $request;
+		$this->setRequest($request);		
 		$this->template = !empty($request['view']) ? $request['view'] : 'default';
 		
-		dump($request);
+		//dump($request);
+	}
+	
+	private function setRequest($request)
+	{
+		// TODO: JSON-Object handle
+		if (isset($request['Titel']) &&
+			isset($request['Autor']) &&
+			isset($request['ISBN']) &&
+			isset($request['Genre']) &&
+		 	isset($request['Verlag']) &&
+		 	isset($request['Veröffentlichungsdatum']) &&
+		 	isset($request['Besitzer']))
+		{
+			//TODO: Save Data to Database
+		}
+		
+		$this->request = $request;
 	}
 	
 	/**
