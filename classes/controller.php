@@ -29,12 +29,16 @@ class Controller
 		$this->setRequest($request);		
 		$this->template = !empty($request['view']) ? $request['view'] : 'default';
 		
-		//dump($request);
+		dump($request['newBook']);
 	}
 	
 	private function setRequest($request)
 	{
-		// TODO: JSON-Object handle
+		if (empty($request['newBook']))
+		{
+			echo "XXX";
+		}
+		/*
 		if (isset($request['Titel']) &&
 			isset($request['Autor']) &&
 			isset($request['ISBN']) &&
@@ -45,6 +49,7 @@ class Controller
 		{
 			//TODO: Save Data to Database
 		}
+		*/
 		
 		$this->request = $request;
 	}

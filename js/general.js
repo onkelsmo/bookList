@@ -4,17 +4,21 @@
  * @author jsmolka
  * @since 08.12.2013
  */
-$(function ()
+$(document).ready(function()
 {
-	$('#newBookForm').on('submit', function(e)
+    /*
+    $('#newBookForm').on('submit', function()
 	{
 		$.ajax(
 		{
 			type:		'post',
 			url:		'index.php',
 			data:		$('#newBookForm').serialize(),
-			success:	data //TODO: JSON übergabe
+			success:    function(data)
+			{
+			     //$(this).html(data);
+			}
 		});
-		e.preventDefault();
 	});
+	*/
 });
